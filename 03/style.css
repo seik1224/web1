@@ -1,0 +1,486 @@
+body, h1, ul, h2, p{
+	margin:0;
+	padding:0;
+}
+
+li {
+	list-style-type:none;
+}
+
+a {
+	text-decoration:none;
+	color:#333;
+}
+
+img {
+	vertical-align:bottom;/*인라인블럭이라 이미지 밑에 불필요한 공간이 생성됨*/
+}
+
+
+/*
+	1. 배경이미지를 넣어보세요
+
+body {
+	background-image:url(images/bg.png);
+	background-attachment:fixed;
+}
+*/
+
+
+/*
+	2. header 영역만 잡아보세요.
+
+	
+
+	body {
+		background-image:url(images/bg.png);
+		background-attachment:fixed;
+	}
+
+	.header {
+		background-color:#151515;
+		height:400px;
+	}
+
+*/
+
+/*
+	3. header를 만들어보세요.
+
+	폰트 : 'Fredoka One'
+	h1의 폰트사이즈 : 200px
+
+
+body {
+	background-image:url(images/bg.png);
+	background-attachment:fixed;
+}
+
+.header {
+	background-color:#151515;
+	text-align:center;
+	height:400px;
+
+	color:#807776;
+	
+	font-family: 'Fredoka One', cursive;
+	line-height:400px;
+
+	overflow:hidden;
+}
+
+.header h1 {	
+	font-size:200px;
+	word-spacing:200px;
+	letter-spacing:-20px;
+	white-space:nowrap;
+	transition:all 1s;
+	color:#807776;
+}
+
+.header:hover h1 {
+	word-spacing:300px;
+	color:white;
+}
+
+.header .point {
+	position:relative;
+	top:0px;
+	width:0;
+	transition:top 1s;
+}
+
+.header:hover .point{
+	top:-400px;
+	width:650px;
+}
+
+
+*/
+
+
+/*
+	4. gnb 영역을 잡아보세요.
+
+
+body {
+	background-image:url(images/bg.png);
+	background-attachment:fixed;
+}
+
+.header {
+	background-color:#151515;
+	text-align:center;
+	height:400px;
+
+	color:#807776;
+	
+	font-family: 'Fredoka One', cursive;
+	line-height:400px;
+
+	overflow:hidden;
+}
+
+.header h1 {	
+	font-size:200px;
+	word-spacing:200px;
+	letter-spacing:-20px;
+	white-space:nowrap;
+	transition:all 1s;
+	color:#807776;
+}
+
+.header:hover h1 {
+	word-spacing:300px;
+	color:white;
+}
+
+.header .point {
+	position:relative;
+	top:0px;
+	width:0;
+	transition:top 1s;
+}
+
+.header:hover .point{
+	top:-400px;
+	width:650px;
+}
+
+
+.gnb-wrapper {
+	background-color:rgba(0,0,0,0.7);
+	text-align:center;
+}
+
+*/
+
+
+/*
+	5. gnb 영역을 만들어보세요.
+
+body {
+	background-image:url(images/bg.png);
+	background-attachment:fixed;
+}
+
+.header {
+	background-color:#151515;
+	text-align:center;
+	height:400px;
+
+	color:#807776;
+	
+	font-family: 'Fredoka One', cursive;
+	line-height:400px;
+
+	overflow:hidden;
+}
+
+.header h1 {	
+	font-size:200px;
+	word-spacing:200px;
+	letter-spacing:-20px;
+	white-space:nowrap;
+	transition:all 1s;
+	color:#807776;
+}
+
+.header:hover h1 {
+	word-spacing:300px;
+	color:white;
+}
+
+.header .point {
+	position:relative;
+	top:0px;
+	width:0;
+	transition:top 1s;
+}
+
+.header:hover .point{
+	top:-400px;
+	width:650px;
+}
+
+.gnb-wrapper {
+	background-color:rgba(0,0,0,0.7);
+	padding:20px 0;
+	
+
+	text-align:center;
+}
+
+.gnb {
+	background-color:#807776;
+	overflow:hidden;
+
+	display:inline-block;
+	vertical-align:bottom;
+	
+	padding : 0 20px;
+	border-radius:30px;
+}
+
+.gnb li {
+	float:left;
+	
+}
+
+.gnb li a {
+	display:block;
+	height:50px;
+	line-height:50px;
+	padding:0 20px;
+
+	border: 5px solid transparent;
+}
+
+*/
+
+
+
+/*
+	6. li a에 마우스를 올리면 border의 아래 색상이
+	#222가 되게 해주세요.
+
+
+body {
+	background-image:url(images/bg.png);
+	background-attachment:fixed;
+}
+
+.header {
+	background-color:#151515;
+	text-align:center;
+	height:400px;
+
+	color:#807776;
+	
+	font-family: 'Fredoka One', cursive;
+	line-height:400px;
+
+	overflow:hidden;
+}
+
+.header h1 {	
+	font-size:200px;
+	word-spacing:200px;
+	letter-spacing:-20px;
+	white-space:nowrap;
+	transition:all 1s;
+	color:#807776;
+}
+
+.header:hover h1 {
+	word-spacing:300px;
+	color:white;
+}
+
+.header .point {
+	position:relative;
+	top:0px;
+	width:0;
+	transition:top 1s;
+}
+
+.header:hover .point{
+	top:-400px;
+	width:650px;
+}
+
+.gnb-wrapper {
+	background-color:rgba(0,0,0,0.7);
+	padding:20px 0;
+	
+
+	text-align:center;
+}
+
+.gnb {
+	background-color:#807776;
+	overflow:hidden;
+
+	display:inline-block;
+	vertical-align:bottom;
+	
+	padding : 0 20px;
+	border-radius:30px;
+}
+
+.gnb li {
+	float:left;
+	
+}
+
+.gnb li a {
+	display:block;
+	height:50px;
+	line-height:50px;
+	padding:0 20px;
+
+	border: 5px solid transparent;
+}
+
+.gnb li a:hover {
+	border-bottom-color: #222;
+}
+
+*/
+
+
+/*
+	7. 컨텐츠 영역을 잡아보세요
+
+.grid {
+	width:960px;
+}
+
+*/
+
+/*
+	8. 컨텐츠 영역을 만들어보세요.
+
+*/
+
+
+
+
+body {
+	background-image:url(images/bg.png);
+	background-attachment:fixed;/*배경이미지가 고정되게*/
+}
+
+.header {
+	background-color:#151515;
+	text-align:center;
+	height:400px;
+	/*
+	img(인라인,블럭 둘다 가진 유일한애)  랑 text(인라인) 는 text-align:center; 로 정렬 가능
+	
+	블럭은 안먹음 => margin : 0 auto; 로 해결
+	*/
+	color:#807776;
+	
+	font-family: 'Fredoka One', cursive;
+	line-height:400px;
+
+	overflow:hidden;
+}
+
+
+
+.header h1 {	
+	font-size:200px;/*h1은 이미 2em 속성이 있으므로 초기화 해줄것*/
+	word-spacing:200px;
+	letter-spacing:-20px;
+	white-space:nowrap;/*창사이즈 작아질시 글자 아래로가는것 없어지게*/
+	transition:all 1s;
+	color:#807776;
+}
+
+.header:hover h1 {
+	word-spacing:300px;
+	color:white;
+}
+
+.header .point {
+	position:relative;
+	top:0px;
+	width:0;
+	transition:top 1s;/*transition:all 1s; all로 하면 모든 스타일속성이 애니메이션으로 바뀜*/
+}
+
+.header:hover .point{
+	top:-400px;
+	width:650px;
+}
+
+.gnb-wrapper {
+	background-color:rgba(0,0,0,0.7);/*alpha 값 줄 때 하위 영향 안받게*/
+	padding:20px 0;
+	
+
+	text-align:center;
+}
+
+.gnb {
+	background-color:#807776;
+	overflow:hidden;
+
+	display:inline-block;
+	vertical-align:bottom;
+	
+	padding : 0 20px;/*양 옆도 똑같이*/
+	border-radius:30px;
+}
+
+.gnb li {
+	float:left;
+	
+}
+
+.gnb li a {
+	display:block;/*a는 인라인이기때문에 넣어줘야 아래가 적용됨*/
+	height:50px;
+	line-height:50px;
+	padding:0 20px;
+
+	border: 5px solid transparent;
+}
+
+.gnb li a:hover {
+	
+	border-bottom-color: #222;
+	
+}
+
+.grid {
+	width:960px;
+	margin:100px auto;
+	overflow:hidden;/*float문제 발생했기 때문에 해줘야함*/
+}
+
+.grid li {
+	margin:10px;
+	width:300px;
+	float:left;
+}
+
+.grid li:nth-child(2),
+.grid li:nth-child(5),
+.grid li:nth-child(8) {
+	position:relative;
+	top:-50px;
+}
+
+.grid li .container {
+	background-color:#93572e;
+	overflow:hidden;/*마진겹침현상 해결*/
+	border-radius:20px;
+	border-bottom: 10px solid #4b260a;
+}
+
+.grid li .container:before {
+	content:'';/* 넣어줘야함 원래는 글씨쓰는 용도content:'WOW';*/
+	display:block;
+	height:50px;
+	background-image:url(images/ac-top.png);
+}
+
+.grid li .container h2 {
+	margin:20px;
+	color:#fff;
+	/*width의 기본값이 auto이기 때문에 부모를 넘어가지 않음 background-color:yellow;  width:100%하면
+	알 수 있음*/
+}
+
+.grid li .container p {
+	margin : 0 20px 20px 20px;/*마진 겹침 현상 발생 !!!!!!!!!
+	부모의 마진과 자식의 마진이 겹쳐짐 -> 상단마진과 하단마진에 대해서 발생
+	부모한테 마진이 생긴거 처럼 보임 -> 부모한테  (1)overflow:hidden;으로 해결
+	(2) 부모한테 border를 줘도 해결됨 border: 1px solid transparent;
+	*/
+	color:rgba(255,255,255, 0.5);
+}
+

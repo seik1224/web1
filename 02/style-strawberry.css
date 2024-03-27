@@ -1,0 +1,205 @@
+/*
+	11. 기본적인 이미지와 색상들 변경해주세요.
+
+	body {
+		background-image: url(images/straw-bg.png);
+	}
+
+	.wrapper {
+		border-color: red;
+	}
+
+	.wrapper .title {
+		color: red;
+	}
+
+
+	.wrapper .gnb {
+		background-color: red;
+	}
+
+
+*/
+
+
+/*
+	12. ul li 레이아웃을 잡아주세요.
+
+	body {
+		background-image: url(images/straw-bg.png);
+	}
+
+	.wrapper {
+		border-color: red;
+	}
+
+	.wrapper .title {
+		color: red;
+	}
+
+
+	.wrapper .gnb {
+		background-color: red;
+	}
+
+
+	.wrapper .food {
+		clear:both;
+		margin-top:20px;
+	}
+
+	.wrapper .food li {
+		float:left;
+		width:220px;
+		height:220px;
+		background-image:url(images/straw-food.png);
+		text-indent:-9999px;
+	}
+
+
+*/
+
+/*
+	13. ul을 디테일 하게 꾸며주세요.
+
+*/
+
+body {
+	background-image: url(images/straw-bg.png);
+}
+
+.wrapper {
+	border-color: red;
+}
+
+.wrapper .title {
+	color: red;
+}
+
+
+.wrapper .gnb {
+	background-color: red;
+}
+
+
+.wrapper .food {
+	clear:both;
+	margin-top:20px;
+
+	border-top:3px solid red;
+	border-bottom:3px solid red;
+}
+
+.wrapper .food li {
+	float:left;
+	width:220px;
+	height:220px;
+	background-image:url(images/straw-food.png);
+	text-indent:-9999px;
+}
+
+/*
+	14. 이미지 위치를 잡아주세요.
+
+body {
+	background-image: url(images/straw-bg.png);
+}
+
+.wrapper {
+	border-color: red;
+}
+
+.wrapper .title {
+	color: red;
+}
+
+
+.wrapper .gnb {
+	background-color: red;
+}
+
+
+.wrapper .food {
+	clear:both;
+	margin-top:20px;
+
+	border-top:3px solid red;
+	border-bottom:3px solid red;
+}
+
+.wrapper .food li {
+	float:left;
+	width:220px;
+	height:220px;
+	background-image:url(images/straw-food.png);
+	text-indent:-9999px;
+}
+
+
+.wrapper .point {
+	right:-130px;
+}
+
+*/
+
+/*
+	15. li 이미지스플라이스 기법 같이 작업
+*/
+
+
+
+body {
+	background-image: url(images/straw-bg.png);
+}
+
+.wrapper {
+	border-color: red;
+}
+
+.wrapper .title {
+	color: red;
+}
+
+
+.wrapper .gnb {
+	background-color: red;
+}
+
+
+.wrapper .food {
+	border-top:3px solid red;
+	border-bottom:3px solid red;
+	clear:both;
+	margin-top:20px;
+}
+
+.wrapper .food li {
+	float:left;
+	width:220px;
+	height:220px;
+	background-image:url(images/straw-food.png);
+	/*자식이 float되고 부모도 float 되면 해결*/
+	text-indent:-9999px;/*들여쓰기*/
+}
+
+.wrapper .food li.cake {
+	background-position:left top;
+}
+
+.wrapper .food li.pie {
+	background-position:center top;
+}
+
+.wrapper .food li.jam {
+	background-position:right top;
+}
+
+.wrapper .food li:hover {
+	background-position-y:bottom;
+}
+
+
+.wrapper .point {
+	right:-130px;
+}
+

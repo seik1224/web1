@@ -1,0 +1,30 @@
+/*
+	9. kiwi를 만들어보세요.
+
+*/
+
+body {
+	background-image: url(images/kiwi-bg.png);
+}
+
+.wrapper {
+	border-color: green;
+}
+
+.wrapper .title {
+	color: green;
+}
+
+.wrapper .gnb {
+	background-color: green;
+}
+
+.wrapper .point {
+	left: -80px;
+}
+
+.wrapper p {
+	position: relative;
+	left: 350px;
+	top: 0;
+}

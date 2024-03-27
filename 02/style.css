@@ -1,0 +1,438 @@
+body, h1, ul, p {
+	margin:0;
+	padding:0;
+}
+
+li {
+	list-style-type:none;
+}
+
+a {
+	text-decoration:none;
+	color:#333;
+}
+
+.clearfix:after {
+	content:'';
+	display:block;
+	clear:both;
+}
+
+
+/*[1]여기까지 초기화*/
+
+/*
+	1. 백그라운드에 orange 이미지를 넣으세요.
+	+ 전체 서체를 'arial'로 바꿔주세요.
+
+
+	body {
+		background-image:url(images/orange-bg.png);
+		font-family:'arial';
+	}
+*/
+
+/*
+	2. .wrapper에 백그라운드 컬러를 주고 중앙정렬 해주세요.
+	가로 960px
+
+
+	body {
+		background-image:url(images/orange-bg.png);
+		font-family:'arial';
+	}
+
+	.wrapper {
+		background-color:#fff;
+		width:960px;
+		margin: 30px auto;
+	}
+
+*/
+
+
+/*
+	3. .wrapper요소에 border와 둥그렇게 꾸며주세요.
+
+body {
+	background-image:url(images/orange-bg.png);
+	font-family:'arial';
+}
+
+.wrapper {
+	background-color:#fff;
+	width:960px;
+	margin: 30px auto;
+
+	border-radius:30px;
+	border:3px solid orange;
+}
+*/
+
+
+
+/*
+	4. .gnb를 배치해보세요
+
+	absolute안에서는 float 문제가 해결됨
+	원래는 background-color:orange; 안보여야함
+
+
+	body {
+		background-image:url(images/orange-bg.png);
+		font-family:'arial';
+	}
+
+	.wrapper {
+		background-color:#fff;
+		width:960px;
+		margin: 30px auto;
+
+		border-radius:30px;
+		border:3px solid orange;
+
+		position:relative;
+		padding:30px;
+	}
+
+
+	.wrapper .gnb {
+		background-color:orange;
+		position:absolute;
+		right:0;
+		top:0;
+	}
+
+
+	.wrapper .gnb li {
+		float:left;
+
+	}
+
+*/
+
+/*
+	5. .gnb 를 꾸며보세요.
+
+	body {
+		background-image:url(images/orange-bg.png);
+		font-family:'arial';
+	}
+
+	.wrapper {
+		background-color:#fff;
+		width:960px;
+		margin: 30px auto;
+
+		border-radius:30px;
+		border:3px solid orange;
+
+		position:relative;
+		padding:30px;
+	}
+
+
+	.wrapper .gnb {
+		background-color:orange;
+		position:absolute;
+		right:0;
+		top:0;
+
+		margin:30px;
+		padding: 0 10px;
+		border-radius:30px;
+	}
+
+
+	.wrapper .gnb li {
+		float:left;
+
+	}
+
+*/
+
+
+
+
+
+/*
+	5. .gnb li a 를 꾸며보세요.
+
+
+	body {
+		background-image:url(images/orange-bg.png);
+		font-family:'arial';
+	}
+
+	.wrapper {
+		background-color:#fff;
+		width:960px;
+		margin: 30px auto;
+
+		border-radius:30px;
+		border:3px solid orange;
+
+		position:relative;
+		padding:30px;
+	}
+
+
+	.wrapper .gnb {
+		background-color:orange;
+		position:absolute;
+		right:0;
+		top:0;
+
+		margin:30px;
+		padding: 0 10px;
+		border-radius:30px;
+	}
+
+
+	.wrapper .gnb li {
+		float:left;
+
+	}
+
+
+	.wrapper .gnb li a {
+		
+		display:block;
+		height:50px;
+		line-height:50px;
+		color:white;
+		padding: 0 10px;
+
+	}
+
+*/
+
+
+
+/*
+	6. p태그 레이아웃을 잡아보세요.
+
+	body {
+		background-image:url(images/orange-bg.png);
+		font-family:'arial';
+	}
+
+	.wrapper {
+		background-color:#fff;
+		width:960px;
+		margin: 30px auto;
+
+		border-radius:30px;
+		border:3px solid orange;
+
+		position:relative;
+		padding:30px;
+	}
+
+
+	.wrapper .gnb {
+		background-color:orange;
+		position:absolute;
+		right:0;
+		top:0;
+
+		margin:30px;
+		padding: 0 10px;
+		border-radius:30px;
+	}
+
+
+	.wrapper .gnb li {
+		float:left;
+
+	}
+
+
+	.wrapper .gnb li a {
+		
+		display:block;
+		height:50px;
+		line-height:50px;
+		color:white;
+		padding: 0 10px;
+
+	}
+
+	.wrapper p {
+		float:left;
+		width:300px;
+
+		margin-right:20px;
+		line-height:1.3em;
+	}
+
+*/
+
+
+/*
+	7. h1과 이미지의 레이아웃도 잡아보세요.
+
+	body {
+		background-image:url(images/orange-bg.png);
+		font-family:'arial';
+	}
+
+	.wrapper {
+		background-color:#fff;
+		width:960px;
+		margin: 30px auto;
+
+		border-radius:30px;
+		border:3px solid orange;
+
+		position:relative;
+		padding:30px;
+	}
+
+
+	.wrapper .gnb {
+		background-color:orange;
+		position:absolute;
+		right:0;
+		top:0;
+
+		margin:30px;
+		padding: 0 10px;
+		border-radius:30px;
+	}
+
+
+	.wrapper .gnb li {
+		float:left;
+
+	}
+
+
+	.wrapper .gnb li a {
+		
+		display:block;
+		height:50px;
+		line-height:50px;
+		color:white;
+		padding: 0 10px;
+
+	}
+
+	.wrapper p {
+		float:left;
+		width:300px;
+
+		margin-right:20px;
+		line-height:1.3em;
+	}
+
+	.wrapper .point {
+		position:absolute;
+		right:-30px;
+		bottom:-100px;
+	}
+
+	.wrapper .title {
+		color:orange;
+		margin-bottom:10px;
+	}
+*/
+
+
+
+
+
+body {
+	background-image:url(images/orange-bg.png);
+	font-family:'arial';
+}
+
+.wrapper {
+	background-color:#fff;
+	/*[2]여기까지 양분시켜주기*/
+	width:960px;
+	margin: 30px auto;
+
+
+	/*[3]여기까지 가장 큰 레이아웃 잡아주기*/
+
+	position:relative;
+	
+
+	padding:30px;
+	/*전체 레이아웃 잡혀 있는 상태에서 padding 주면 전체 크기 늘어남*/
+
+	border-radius:30px;
+	border:3px solid orange;
+
+}
+
+
+
+.wrapper .gnb {
+	background-color:orange;
+	/*(1)얘가 차지하고 있는 공간확인*/
+	position:absolute;
+	right:0;
+	top:0;
+	/*
+	(2)absolute가 되면 너비가 컨텐츠 크기만큼으로 줄어듬
+	(float도 마찬가지 => 하지만 float는 주변이 영향을 받아서 안씀)
+	이제  background-color:orange;  이 안에서 레이아웃 잡아나감
+	*/
+
+	margin:30px;/*[5]*/
+	padding: 0 10px;/*양옆에 10px씩 부족함*/
+	border-radius:30px;
+}
+
+.wrapper .gnb li {
+	float:left;
+	/*
+	absolute안에서는 float 문제가 해결됨
+	원래는 background-color:orange; 안보여야함
+	*/
+	
+	
+}
+
+.wrapper p {
+	float:left;/*부모한테 overflow:hidden; 이나 clearfix 줘야함*/
+	width:300px;
+
+	margin-right:20px;/*[5]*/
+	line-height:1.3em;
+}
+
+.wrapper .point {
+	position:absolute;
+	right:-30px;
+	bottom:-100px;
+	/*absolute는 공간 위로 떠버림*/
+}
+
+
+/*[4]여기까지 내부레이아웃 잡아주기*/
+
+
+.wrapper .title {
+	color:orange;
+	margin-bottom:10px;
+}
+
+
+.wrapper .gnb li a {
+	
+	display:block;
+	height:50px;
+	line-height:50px;/*줄간격 조정 -> height랑 line height 똑같이 해줌 => 폰트사이즈 바껴도 가운데 정렬 유지됨 + 높이도 변함없음*/
+	color:white;
+	padding: 0 10px;/*상하단은 이미 줬으니깐 좌우로만 주기*/
+	/*
+	li안에 padding주면 안됨 ! -> 버튼이 너무 작음
+	a는 인라인이기 때문에 padding주면 상하단이 안먹고 좌우만 늘어남=>display:block
+	padding:20px; -> 높이값을 자신이 조절할 수 없음
+	*/
+
+}
+/*[5]나머지디자인*/

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fruit - Kiwi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-kiwi.css" />
+  </head>
+  <body>
+    <!-- 
+			8. html을 작성해보세요.
+
+			Completely synergize resource relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+			To beautify your face can mask kiwi fruit, kiwi fruit grab, then mash until smooth, and smear your face. After that you usually will feel like a pinch on the skin. This means that the organic acid content in kiwifruit is working. Wait about 15 minutes, then rinse with clean water using the tonic of any kind.
+		-->
+    <div class="wrapper clearfix">
+      <h1 class="title">Kiwi</h1>
+      <ul class="gnb">
+        <li><a href="orange.html">Orange</a></li>
+        <li><a href="kiwi.html">Kiwi</a></li>
+        <li><a href="strawberry.html">Strawberry</a></li>
+      </ul>
+
+      <p>
+        Completely synergize resource relationships via premier niche markets.
+        Professionally cultivate one-to-one customer service with robust ideas.
+        Dynamically innovate resource-leveling customer service for state of the
+        art customer service.
+      </p>
+
+      <p>
+        To beautify your face can mask kiwi fruit, kiwi fruit grab, then mash
+        until smooth, and smear your face. After that you usually will feel like
+        a pinch on the skin. This means that the organic acid content in
+        kiwifruit is working. Wait about 15 minutes, then rinse with clean water
+        using the tonic of any kind.
+      </p>
+
+      <img class="point" src="images/kiwi.png" />
+    </div>
+    <script>
+      //마우스 우클릭을 했을때 브라우저 기본 이벤트 제어 (우클릭 방지)
+      if (window.addEventListener) {
+        window.addEventListener(
+          "contextmenu",
+          function (e) {
+            try {
+              if (typeof e != "undefined") {
+                e.preventDefault();
+                return false;
+              } else {
+                return false;
+              }
+            } catch (e) {}
+          },
+          false
+        );
+      } else {
+        window.attachEvent("oncontextmenu", function (e) {
+          try {
+            if (typeof e != "undefined") {
+              e.preventDefault();
+              return false;
+            } else {
+              return false;
+            }
+          } catch (e) {}
+        });
+      }
+      var handlemouseEvent = function (e) {
+        console.log(e);
+        try {
+          if (typeof e == "undefined") {
+            if (window.event.button && window.event.button == "2") {
+              return false;
+            }
+          } else if ((e.which && e.which == 3) || (e.button && e.button == 2)) {
+            e.preventDefault();
+            return false;
+          } else if (e.keyCode == 123) {
+            //F12방지
+            e.preventDefault();
+            return false;
+          } else if (e.ctrlKey && e.shiftKey && e.keyCode == 67) {
+            //F12방지
+            e.preventDefault();
+            return false;
+          }
+        } catch (e) {}
+      };
+      window.onkeydown = handlemouseEvent;
+      window.onkeyup = handlemouseEvent;
+    </script>
+  </body>
+</html>

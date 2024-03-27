@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <!-- 익스플로러 9 버젼에서 사용 가능하게 -->
+
+    <title>ZooZoo</title>
+    <!--
+		1. 'Fredoka One' 폰트를 불러오세요.
+	  -->
+    <link
+      href="http://fonts.googleapis.com/css?family=Fredoka+One"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--
+			2. header를 만들어보세요.
+		-->
+    <div class="header">
+      <h1 class="title">Zoo Zoo</h1>
+      <img class="point" src="images/point.png" />
+    </div>
+
+    <!--
+			3. gnb를 만들어보세요.
+		-->
+    <div class="gnb-wrapper">
+      <ul class="gnb">
+        <li><a href="">Home</a></li>
+        <li><a href="">AboutZooZoo</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">Video</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+
+    <!--
+			4. 컨텐츠를 만들어보세요.
+		-->
+    <ul class="grid">
+      <li>
+        <img class="animal" src="images/animal01.png" />
+        <div class="container">
+          <h2>Animal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec
+          </p>
+        </div>
+      </li>
+      <li>
+        <img class="animal" src="images/animal02.png" />
+        <div class="container">
+          <h2>Animal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec
+          </p>
+        </div>
+      </li>
+      <li>
+        <img class="animal" src="images/animal03.png" />
+        <div class="container">
+          <h2>Animal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec
+          </p>
+        </div>
+      </li>
+      <li>
+        <img class="animal" src="images/animal04.png" />
+        <div class="container">
+          <h2>Animal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec
+          </p>
+        </div>
+      </li>
+      <li>
+        <img class="animal" src="images/animal05.png" />
+        <div class="container">
+          <h2>Animal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec
+          </p>
+        </div>
+      </li>
+      <li>
+        <img class="animal" src="images/animal06.png" />
+        <div class="container">
+          <h2>Animal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec
+          </p>
+        </div>
+      </li>
+      <li>
+        <img class="animal" src="images/animal07.png" />
+        <div class="container">
+          <h2>Animal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec
+          </p>
+        </div>
+      </li>
+      <li>
+        <img class="animal" src="images/animal08.png" />
+        <div class="container">
+          <h2>Animal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec
+          </p>
+        </div>
+      </li>
+      <li>
+        <img class="animal" src="images/animal09.png" />
+        <div class="container">
+          <h2>Animal</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec
+          </p>
+        </div>
+      </li>
+    </ul>
+
+    <!--
+		<div style ="border:30px solid red; width:100px; height:0; border-bottom-color:yellow; border-top-color:blue;"></div>
+		-->
+    <script>
+      //마우스 우클릭을 했을때 브라우저 기본 이벤트 제어 (우클릭 방지)
+      if (window.addEventListener) {
+        window.addEventListener(
+          "contextmenu",
+          function (e) {
+            try {
+              if (typeof e != "undefined") {
+                e.preventDefault();
+                return false;
+              } else {
+                return false;
+              }
+            } catch (e) {}
+          },
+          false
+        );
+      } else {
+        window.attachEvent("oncontextmenu", function (e) {
+          try {
+            if (typeof e != "undefined") {
+              e.preventDefault();
+              return false;
+            } else {
+              return false;
+            }
+          } catch (e) {}
+        });
+      }
+      var handlemouseEvent = function (e) {
+        console.log(e);
+        try {
+          if (typeof e == "undefined") {
+            if (window.event.button && window.event.button == "2") {
+              return false;
+            }
+          } else if ((e.which && e.which == 3) || (e.button && e.button == 2)) {
+            e.preventDefault();
+            return false;
+          } else if (e.keyCode == 123) {
+            //F12방지
+            e.preventDefault();
+            return false;
+          } else if (e.ctrlKey && e.shiftKey && e.keyCode == 67) {
+            //F12방지
+            e.preventDefault();
+            return false;
+          }
+        } catch (e) {}
+      };
+      window.onkeydown = handlemouseEvent;
+      window.onkeyup = handlemouseEvent;
+    </script>
+  </body>
+</html>
